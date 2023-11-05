@@ -8,3 +8,6 @@ const myhero = function (){
 }
 console.log(typeof myhero);
 myhero();
+
+
+//stack(primitive)  //heap(non Primitive)  
