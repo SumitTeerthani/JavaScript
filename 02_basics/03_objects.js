@@ -18,4 +18,6 @@ const JsUser={
 JsUser.greetings=function(){
     console.log(`Hello Js User , ${this.name}`)
 }
-JsUser.greetings();
+//JsUser.greetings();
+JsUser.city="Jalandhar";
+console.log(JsUser);
