@@ -1,16 +1,27 @@
-function add(num1,num2){
-    let result =num1+num2;
-    return result;
-}
+// function add(num1,num2){
+//     let result =num1+num2;
+//     return result;
+// }
  
-let result1=add(7,8);
-// console.log("The sum of the two numbers is "+result1);
+// let result1=add(7,8);
+// // console.log("The sum of the two numbers is "+result1);
 
-function calculateCartPrice(...num){  //This is Called as rest operation 
-    let totalprice=0;
-    for (var i=0 ;i< num.length;i++){
-        totalprice+=num[i];
+// function calculateCartPrice(...num){  //This is Called as rest operation 
+//     let totalprice=0;
+//     for (var i=0 ;i< num.length;i++){
+//         totalprice+=num[i];
+//     }
+//     return totalprice;
+// }
+// console.log(calculateCartPrice(200,300,350,650,400));
+
+
+function one(){
+    const name="Sumit"
+    function two(){
+        const role="Software Developer Engineer";
+        console.log(`My name is ${name} and My Role is ${role}`);
     }
-    return totalprice;
+    two();
 }
-console.log(calculateCartPrice(200,300,350,650,400));
+// two() //This Shows Error 
