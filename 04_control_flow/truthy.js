@@ -14,3 +14,6 @@ if(Object.keys(empty).length==0){
 }
 
 //Nullish Coalescing Operator   -> null or undefined
+
+const iceTeaPrice=90;
+iceTeaPrice<=80 ? console.log("Ice Tea Price is less than 80") : console.log("Ice Tea Price is greater than 80")
