@@ -5,7 +5,7 @@ const arr2=["Hardik","Nikunj","Khushal Seth"];
 const all_friends=[...arr1,...arr2]
 //console.log(all_friends); //Concatenates both String
 
-
+console.log(Array.from(all_friends));
 // console.log(Array.from("Sumit"));
 // console.log(Array.from({name:"hitesh"}));  //empty array because cannot Convert it into an array
 
