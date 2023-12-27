@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Request</title>
+</head>
+<body>
+
+    <h1>Fetching Data From A Github Api</h1>
+    <h2>To Know More About The Github Api Data click on start</h2>
+    <button class="start">Start</button>
+    <div id="data"></div>
+    
+</body>
+<script>
+    requestUrl="https://api.github.com/users/hiteshchoudhary"
+    const xmr=new XMLHttpRequest()
+    xmr.open("Get",requestUrl)
+    xmr.onreadystatechange=function(){
+        const ready=xmr.readyState
+        if(ready==4){
+            const data=JSON.parse(this.responseText)
+            const name=data.name
+            const followers=data.followers
+            const location =data.location
+           document.querySelector('.start').addEventListener('click',function(e){
+             document.getElementById('data').innerHTML=`<h1>${name}  </h1> <br>
+              <h2>Followers=${followers}</h2>  <br>
+              <h3>Location : ${location}</h3>`
+           })
+        }
+    }
+     xmr.send()
+</script>
+</html>
