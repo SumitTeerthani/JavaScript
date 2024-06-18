@@ -9,7 +9,7 @@ const JsUser={
 
 // console.log(JsUser);
 // console.log(typeof(JsUser[mys]));
-// JsUser.age=20;
+//  JsUser.age=20;
 // console.log(JsUser)
 // Object.freeze(JsUser);  //It freze the object so no change Can Occur Now
 // JsUser.age=23;

@@ -1,16 +1,33 @@
 //for of
 
 const arr=[1,3,5,3,5,6,4]
-for(const num of arr)
-{
-    //console.log(num);
-}
+
+// for(const num of arr) 
+// {
+//     console.log(num);
+// }
+//arr.map((num)=>console.log(num));
 const greetings="Hello My Friend How are you"
 for (const greet of greetings) {
     // if(greet== " ")
     //  continue
   //  console.log(greet);
 }
+
+//Map
+const map=new Map();
+map.set("IND","INDIA");
+map.set("USA","Unites States of America");
+map.set("AUS","Australia");
+const map2 ={
+  pak : "Pakistan",
+  uae : "United Arab Emirates",
+}
+//console.log( map2);
+for(const [key,value] of map)
+    {
+       // console.log(`Key is ${key} and Value is ${value}`);
+    }
 
 // For in Loop
 const myObject={
@@ -20,7 +37,7 @@ const myObject={
    py:'python'
 }
 for(const key in myObject){
-   // console.log(`${key} is the Shortcut for ${myObject[key]}`);
+    console.log(`${key} is the Shortcut for ${myObject[key]}`);
 }
 
 
@@ -48,6 +65,7 @@ const myGames=[
 ]
 
 myGames.forEach((item)=>{
-    if(item.Company!=undefined)
-console.log(item.Company);
-})
+   // if(item.Company!=undefined)
+//console.log(item.Company);
+} 
+);
