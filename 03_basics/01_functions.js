@@ -24,4 +24,5 @@ function one(){
     }
     two();
 }
- two() //This Shows Error 
+ //two() //This Shows Error 
+ one();
