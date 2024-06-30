@@ -7,7 +7,8 @@ const names=["Agrim","Anupam","Gaurav","Vinay"];
 // console.log(printNames); //undefined
 
 
-const myNums=[1,2,3,4,5,6,7,8,9,10]
+const myNums=[1,2,3,4,5,6,7,8,9,10] 
+//
 
 // const values= myNums.filter((item)=> item>2)
 
