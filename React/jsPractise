@@ -1,0 +1,32 @@
+//Destructuring in ES6
+// function calculate(a,b)
+// {
+//     const add=a+b;
+//     const sub=a-b;
+//     const mul=a*b;
+//     const div=a/b;
+//     return [add,sub,mul,div];
+// }
+
+// [a,s,m,d]=calculate(2,6);
+// console.log(a,s,m,d);
+
+//Spread operator in JS (...)
+// const n1=[3,4,5,2,9];
+// const n2=[1,2,3,4];
+// const n3=[...n1,...n2];
+// const [a,b,...rest]=n1;
+// console.log(rest);
+
+const myVehicle={
+   brand:"Audi",
+   model:"E9"
+}
+
+const type={
+    color:"black",
+    year:2019
+}
+
+const mycar={...myVehicle,...type}
+console.log(mycar);
